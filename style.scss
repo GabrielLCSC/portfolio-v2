@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 10px;
+}
+
+.roboto{
+    font-family: 'Roboto Mono';
+}
+
+body{
+    background: #232323;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #19191968;
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        .logo{
+            object-fit: cover;
+            width: 50px;
+        }
+        .menu{
+            object-fit: contain;
+
+        }
+    }
+}
+
+.main-content{
+    margin-left: 20px;
+    margin-top: 150px;
+    h2{
+        margin-bottom: 15px;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    h1{
+        font-size: 2.6rem;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+}
+
+.content-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+    .button{
+        display: inline-flex;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: #C6B840 solid 2px;
+
+        .text-button{
+            font-family: 'Roboto Mono';
+            font-size: 1.6rem;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

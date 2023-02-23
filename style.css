@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins";
+  color: white;
+  font-size: 10px;
+}
+
+.roboto {
+  font-family: "Roboto Mono";
+}
+
+body {
+  background: #232323;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(25, 25, 25, 0.4078431373);
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+header .navbar .logo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+}
+header .navbar .menu {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main-content {
+  margin-left: 20px;
+  margin-top: 150px;
+}
+.main-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.main-content h1 {
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.main-content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.content-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.content-button .button {
+  display: inline-flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: #C6B840 solid 2px;
+}
+.content-button .button .text-button {
+  font-family: "Roboto Mono";
+  font-size: 1.6rem;
+}
+.content-button .button .text-button a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
