@@ -41,23 +41,84 @@ header .navbar .menu {
      object-fit: contain;
 }
 
-.main-content {
+.index-content {
   margin-left: 20px;
   margin-top: 150px;
+}
+.index-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.index-content h1 {
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.index-content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.main-content {
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .main-content h2 {
   margin-bottom: 15px;
   font-size: 1.6rem;
   font-weight: 400;
 }
-.main-content h1 {
-  font-size: 2.6rem;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
 .main-content p {
+  margin-bottom: 20px;
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.image-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.image-content .image-moi {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 190px;
+  position: absolute;
+}
+.image-content .rectangle {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.techno-content {
+  margin-top: 50px;
+  font-family: "Roboto Mono";
+}
+.techno-content h2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+.lists-content {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-around;
+}
+.lists-content .list {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.lists-content .flex-list {
+  margin-bottom: 10px;
+  display: flex;
+}
+.lists-content .flex-list img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
 }
 
 .content-button {
