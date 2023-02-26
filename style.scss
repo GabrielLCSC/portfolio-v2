@@ -188,6 +188,18 @@ header{
                 object-fit: contain;
                 width: 70%;
             }
+            .p-image-m{
+                object-fit: contain;
+                width: 30%;
+                position: absolute;
+            }
+        
+            .p-rectangle-m{
+                margin-top: 10px;
+                margin-left: 25px;
+                object-fit: contain;
+                width: 30%;
+            }
         }
         .p-texte{
             margin-left: 20px;

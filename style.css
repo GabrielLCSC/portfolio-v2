@@ -179,6 +179,19 @@ header .navbar .menu {
      object-fit: contain;
   width: 70%;
 }
+.projects .project-content .p-image-content .p-image-m {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30%;
+  position: absolute;
+}
+.projects .project-content .p-image-content .p-rectangle-m {
+  margin-top: 10px;
+  margin-left: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30%;
+}
 .projects .project-content .p-texte {
   margin-left: 20px;
   margin-top: 40px;
