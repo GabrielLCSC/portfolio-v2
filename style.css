@@ -97,6 +97,7 @@ header .navbar .menu {
   font-family: "Roboto Mono";
 }
 .techno-content h2 {
+  margin-left: 20px;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 40px;
@@ -141,4 +142,49 @@ header .navbar .menu {
 .content-button .button .text-button a {
   text-decoration: none;
   color: white;
+}
+
+.projects {
+  margin-top: 60px;
+}
+.projects h2 {
+  margin-left: 20px;
+  font-weight: 400;
+}
+.projects .project-content {
+  margin-top: 60px;
+}
+.projects .project-content .project-title {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+.projects .project-content .p-image-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.projects .project-content .p-image-content .p-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 70%;
+  height: 190px;
+  position: absolute;
+}
+.projects .project-content .p-image-content .p-rectangle {
+  margin-top: 30px;
+  margin-left: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 70%;
+}
+.projects .project-content .p-texte {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.projects .project-content .p-texte p {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */

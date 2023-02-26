@@ -101,6 +101,7 @@ header{
     font-family: 'Roboto Mono';
 
     h2{
+        margin-left: 20px;
         font-weight: 400;
         font-size: 1.6rem;
         margin-bottom: 40px;
@@ -147,6 +148,55 @@ header{
             a{
                 text-decoration: none;
                 color: white;
+            }
+        }
+    }
+}
+
+.projects{
+    margin-top: 60px;
+
+    h2{
+        margin-left: 20px;
+        font-weight: 400;
+    }
+    .project-content{
+        margin-top: 60px;
+
+        .project-title{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+
+        }
+        .p-image-content{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        
+            .p-image{
+                object-fit: contain;
+                width: 70%;
+                height: 190px;
+                position: absolute;
+            }
+        
+            .p-rectangle{
+                margin-top: 30px;
+                margin-left: 25px;
+                object-fit: contain;
+                width: 70%;
+            }
+        }
+        .p-texte{
+            margin-left: 20px;
+            margin-top: 40px;
+
+            p{
+                margin-bottom: 20px;
+                font-size: 1.6rem;
+                font-weight: 300;
             }
         }
     }
