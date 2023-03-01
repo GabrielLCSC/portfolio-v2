@@ -26,7 +26,7 @@ header{
     z-index: 10;
 
     top: 0;
-    background-color: #19191968;
+    background-color: #19191900;
 
 .navbar-main{
         display: flex;
@@ -56,7 +56,7 @@ header{
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: #33333396;
+            background-color: #333333e1;
             color: #fff;
         
             .burger-menu {
@@ -81,11 +81,13 @@ header{
                 li a {
                 color: #fff;
                 text-decoration: none;
-                padding: 10px;
+                padding: 20px;
+                font-size: 1.2rem;
                 }
             }
             
             @media (max-width: 768px) {
+
                 .burger-menu {
                     display: block;
                 cursor: pointer;
@@ -96,7 +98,7 @@ header{
                 top: 80px;
                 left: 0;
                 width: 100%;
-                background-color: #1919199a;
+                background-color: #1919198f;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
