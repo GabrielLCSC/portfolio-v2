@@ -28,6 +28,19 @@ header{
     top: 0;
     background-color: #19191968;
 
+.navbar-main{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    .logo{
+
+        object-fit: cover;
+            width: 50px;
+    }
+}
+
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -136,6 +149,8 @@ header{
 }
 
 .index-content{
+    margin-right: 20px;
+
     margin-left: 20px;
     margin-top: 150px;
     h2{
@@ -155,6 +170,7 @@ header{
 }
 
 .main-content{
+    margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
     h2{
@@ -256,10 +272,15 @@ header{
         margin-top: 60px;
 
         .project-title{
-            margin-top: 30px;
+            margin-top: 0px;
             display: flex;
             justify-content: center;
             gap: 10%;
+
+            img{
+                object-fit: contain;
+                width: 25px;
+            }
 
         }
         .p-image-content{
@@ -296,6 +317,7 @@ header{
         }
         .p-texte{
             margin-left: 20px;
+            margin-right: 20px;
             margin-top: 40px;
 
             p{
