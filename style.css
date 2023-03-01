@@ -21,6 +21,7 @@ body {
 
 header {
   position: sticky;
+  z-index: 10;
   top: 0;
   background-color: rgba(25, 25, 25, 0.4078431373);
 }
@@ -36,9 +37,84 @@ header .navbar .logo {
      object-fit: cover;
   width: 50px;
 }
-header .navbar .menu {
-  -o-object-fit: contain;
-     object-fit: contain;
+header .navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.5882352941);
+  color: #fff;
+}
+header .navbar nav .burger-menu {
+  display: none;
+}
+header .navbar nav .burger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+header .navbar nav .menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .navbar nav .menu-list li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  header .navbar nav .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  header .navbar nav .menu-list {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 0.6039215686);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+  header .navbar nav .menu-list.active {
+    opacity: 1;
+    pointer-events: all;
+    top: 100px;
+  }
+  header .navbar nav .menu-list.active li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  header .navbar nav .menu-list li {
+    padding: 7px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+  }
+  header .navbar nav .menu-list li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  header .navbar nav .menu-list li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  header .navbar nav .menu-list li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  header .navbar nav .menu-list li:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  header .navbar nav .menu-list li a {
+    font-size: 1.6rem;
+  }
 }
 
 .index-content {
