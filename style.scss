@@ -18,7 +18,10 @@ html{
 }
 
 body{
-    background: #232323;
+    background: linear-gradient(217deg, rgba(29, 29, 29, 0.8), rgba(0, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, #2b2b2b, #272727),
+    linear-gradient(336deg, #282828, #1e1e1e);
+    background-attachment: fixed;
 }
 
 header{
@@ -173,41 +176,40 @@ header{
     }
 }
 
-.main-content{
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    h2{
-        margin-bottom: 15px;
-        font-size: 1.6rem;
-        font-weight: 400;
+.content-global{
+    display: block;
+
+    .main-content{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        h2{
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+        
+        p{
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
     }
     
-    p{
-        margin-bottom: 20px;
-        font-size: 1.6rem;
-        font-weight: 300;
+    .image-content{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
+    
+        .image-moi{
+            object-fit: cover;
+            width: 64%;
+            
+        }
     }
+    
 }
-
-.image-content{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-
-    .image-moi{
-        object-fit: cover;
-        width: 50%;
-        height: 190px;
-        position: absolute;
-    }
-
-    .rectangle{
-        margin-top: 10px;
-        margin-left: 30px;
-    }
-}
-
 .techno-content{
     margin-top: 50px;
     font-family: 'Roboto Mono';
@@ -287,48 +289,173 @@ header{
             }
 
         }
-        .p-image-content{
+        .p-project-content{
+            display: block;
+            .p-image-content{
             
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        
-            .p-image{
-                object-fit: contain;
-                width: 70%;
-                height: 190px;
-                position: absolute;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            
+                .p-image{
+                    object-fit: contain;
+                    width: 70%;
+                    height: 190px;
+                }
+    
+                .p-image-m{
+                    object-fit: contain;
+                    width: 30%;
+                }
+            
+                
             }
-        
-            .p-rectangle{
-                margin-top: 30px;
-                margin-left: 25px;
-                object-fit: contain;
-                width: 70%;
-            }
-            .p-image-m{
-                object-fit: contain;
-                width: 30%;
-                position: absolute;
-            }
-        
-            .p-rectangle-m{
-                margin-top: 10px;
-                margin-left: 25px;
-                object-fit: contain;
-                width: 30%;
+            .p-texte{
+                margin-left: 20px;
+                margin-right: 20px;
+                max-width: 700px;
+                margin-top: 40px;
+                
+    
+                p{
+                    margin-bottom: 20px;
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                }
             }
         }
-        .p-texte{
-            margin-left: 20px;
-            margin-right: 20px;
-            margin-top: 40px;
+    }
+}
 
+@media (min-width: 868px) {
+    .content-global{
+        display: flex;
+    
+        .main-content{
+            width: 200%;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+            h2{
+                margin-bottom: 15px;
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+            
             p{
                 margin-bottom: 20px;
                 font-size: 1.6rem;
                 font-weight: 300;
             }
         }
+        
+        .image-content{
+            display: flex;
+        
+            .image-moi{
+                object-fit: contain;
+                width: 60%;
+                display: block;
+
+                
+            }
+        }
+        
     }
+
+    
+.lists-content{
+    font-size: 1.6rem;
+    display: block;
+    justify-content: none;
+    ul{
+        margin-bottom: 20px;
+        display: flex;
+        .list{
+            margin-left: 20px;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            list-style: none;
+        }
+        .flex-list{
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+    
+            img{
+                object-fit: contain;
+                margin-right: 10px;
+                margin-left: 20px;
+                
+            }
+        }
+    }
+
+    
+}
+
+
+.projects{
+    margin-top: 60px;
+    
+
+    h2{
+        margin-left: 20px;
+        font-weight: 400;
+    }
+    .project-content{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+
+        .project-title{
+            margin-top: 0px;
+            text-align: center;
+            gap: 10%;
+
+            img{
+                object-fit: contain;
+                width: 25px;
+            }
+
+        }
+        .p-project-content{
+            display: flex;
+            justify-content: center;
+            .p-image-content{
+            
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            
+                .p-image{
+                    object-fit: contain;
+                    width: 70%;
+                    height: 190px;
+                }
+    
+                .p-image-m{
+                    object-fit: contain;
+                    width: 30%;
+                }
+            
+                
+            }
+            .p-texte{
+                max-width: 600px;
+                margin-top: 40px;
+                
+    
+                p{
+                    margin-bottom: 20px;
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+
 }

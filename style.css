@@ -16,7 +16,8 @@ html {
 }
 
 body {
-  background: #232323;
+  background: linear-gradient(217deg, rgba(29, 29, 29, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(127deg, #2b2b2b, #272727), linear-gradient(336deg, #282828, #1e1e1e);
+  background-attachment: fixed;
 }
 
 header {
@@ -150,37 +151,33 @@ header .navbar nav .menu-list li a {
   font-weight: 300;
 }
 
-.main-content {
+.content-global {
+  display: block;
+}
+.content-global .main-content {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 20px;
 }
-.main-content h2 {
+.content-global .main-content h2 {
   margin-bottom: 15px;
   font-size: 1.6rem;
   font-weight: 400;
 }
-.main-content p {
+.content-global .main-content p {
   margin-bottom: 20px;
   font-size: 1.6rem;
   font-weight: 300;
 }
-
-.image-content {
+.content-global .image-content {
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
-.image-content .image-moi {
+.content-global .image-content .image-moi {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 50%;
-  height: 190px;
-  position: absolute;
-}
-.image-content .rectangle {
-  margin-top: 10px;
-  margin-left: 30px;
+  width: 64%;
 }
 
 .techno-content {
@@ -256,45 +253,142 @@ header .navbar nav .menu-list li a {
      object-fit: contain;
   width: 25px;
 }
-.projects .project-content .p-image-content {
+.projects .project-content .p-project-content {
+  display: block;
+}
+.projects .project-content .p-project-content .p-image-content {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
-.projects .project-content .p-image-content .p-image {
+.projects .project-content .p-project-content .p-image-content .p-image {
   -o-object-fit: contain;
      object-fit: contain;
   width: 70%;
   height: 190px;
-  position: absolute;
 }
-.projects .project-content .p-image-content .p-rectangle {
-  margin-top: 30px;
-  margin-left: 25px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 70%;
-}
-.projects .project-content .p-image-content .p-image-m {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 30%;
-  position: absolute;
-}
-.projects .project-content .p-image-content .p-rectangle-m {
-  margin-top: 10px;
-  margin-left: 25px;
+.projects .project-content .p-project-content .p-image-content .p-image-m {
   -o-object-fit: contain;
      object-fit: contain;
   width: 30%;
 }
-.projects .project-content .p-texte {
+.projects .project-content .p-project-content .p-texte {
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 700px;
   margin-top: 40px;
 }
-.projects .project-content .p-texte p {
+.projects .project-content .p-project-content .p-texte p {
   margin-bottom: 20px;
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+@media (min-width: 868px) {
+  .content-global {
+    display: flex;
+  }
+  .content-global .main-content {
+    width: 200%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .content-global .main-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .content-global .main-content p {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  .content-global .image-content {
+    display: flex;
+  }
+  .content-global .image-content .image-moi {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 60%;
+    display: block;
+  }
+  .lists-content {
+    font-size: 1.6rem;
+    display: block;
+    justify-content: none;
+  }
+  .lists-content ul {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .lists-content ul .list {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  .lists-content ul .flex-list {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .lists-content ul .flex-list img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .projects {
+    margin-top: 60px;
+  }
+  .projects h2 {
+    margin-left: 20px;
+    font-weight: 400;
+  }
+  .projects .project-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+  .projects .project-content .project-title {
+    margin-top: 0px;
+    text-align: center;
+    gap: 10%;
+  }
+  .projects .project-content .project-title img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 25px;
+  }
+  .projects .project-content .p-project-content {
+    display: flex;
+    justify-content: center;
+  }
+  .projects .project-content .p-project-content .p-image-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .projects .project-content .p-project-content .p-image-content .p-image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 70%;
+    height: 190px;
+  }
+  .projects .project-content .p-project-content .p-image-content .p-image-m {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 30%;
+  }
+  .projects .project-content .p-project-content .p-texte {
+    max-width: 600px;
+    margin-top: 40px;
+  }
+  .projects .project-content .p-project-content .p-texte p {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 }/*# sourceMappingURL=style.css.map */
